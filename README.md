@@ -1,6 +1,6 @@
 # Cinemille FrontEnd Application
 
-Cinemille is a frontend application built with Angular, designed to manage scheduled cinema movies, included the expired ones. It uses PrimeNG for UI components and Bootstrap for styling.
+Cinemille is a frontend application built with Angular, designed to manage scheduled cinema movies, included the expired ones. It uses PrimeNG and Bootstrap as well.
 
 ## Table of Contents
 
