@@ -1,0 +1,29 @@
+<section class="wrapper">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-4">
+        <h2>Complete Movies List from CineMille, the best in town!</h2>
+      </div>
+
+      <div class="col-8">
+        <ul>
+          <li *ngFor="let movie of movies">
+            <h3>{{ movie.name }}</h3>
+            <p>Release Date: {{ movie.onAirFrom | date }}</p>
+            <p>End Date: {{ movie.onAirTo | date }}</p>
+            <p>Actors: {{ movie.actorNames.join(", ") }}</p>
+            <p>Genres: {{ movie.allGenres.join(", ") }}</p>
+          </li>
+        </ul>
+        <h5 *ngIf="movies.length == 0">No film found!</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p-button type="button" size="large" (click)="goHome()"
+          >back to homepage</p-button
+        >
+      </div>
+    </div>
+  </div>
+</section>

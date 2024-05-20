@@ -1,0 +1,14 @@
+.wrapper {
+    margin: 0 auto;
+
+}
+
+.container{
+    border-top: 3px solid black;
+}
+
+
+ul{
+    list-style-type: none;
+    padding: 0
+  }

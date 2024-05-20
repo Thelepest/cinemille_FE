@@ -1,0 +1,39 @@
+<section class="wrapper">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-4">
+        <h2>Scheduled Movies research per date</h2>
+      </div>
+      <div class="col-8">
+        <p-calendar
+          [(ngModel)]="startDate"
+          placeholder="Start Date"
+        ></p-calendar>
+        <p-calendar [(ngModel)]="endDate" placeholder="End Date"></p-calendar>
+        <p-button type="button" (click)="getMoviesByDate()"
+          >Get Movies</p-button
+        >
+        <ul *ngIf="movies.length > 0">
+          <li *ngFor="let movie of movies">
+            <h3>{{ movie.name }}</h3>
+            <p>Released on: {{ movie.onAirFrom | date }}</p>
+            <p>Scheduled to: {{ movie.onAirTo | date }}</p>
+            <p>Actors: {{ movie.actorNames.join(", ") }}</p>
+            <p>Genres: {{ movie.allGenres.join(", ") }}</p>
+          </li>
+        </ul>
+        <h5 *ngIf="movies.length == 0">
+          No movie found between selected dates!
+        </h5>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-12">
+        <p-button type="button" size="large" (click)="goHome()"
+          >back to homepage</p-button
+        >
+      </div>
+    </div>
+  </div>
+</section>
