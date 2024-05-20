@@ -41,10 +41,8 @@ Before you begin, ensure you have met the following requirements:
 ## Running the Application
 
 **Start the Angular application**:
-
-    ```bash
-  ng serve
-
+    
+     ng serve
 The application should now be running on http://localhost:4200.
 
 ## Contributing
