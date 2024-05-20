@@ -1,27 +1,57 @@
-# CinemilleFE
+# Cinemille FrontEnd Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Cinemille is a frontend application built with Angular, designed to manage scheduled cinema movies, included the expired ones. It uses PrimeNG for UI components and Bootstrap for styling.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Contributing](#contributing)
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Before you begin, ensure you have met the following requirements:
 
-## Build
+- **Node.js and npm**: Download and install from [Node.js](https://nodejs.org/).
+- **Angular CLI**: Install globally using npm:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  ```bash
+  npm install -g @angular/cli
 
-## Running unit tests
+- **Git**: Ensure Git is installed to clone the repository. Download from [Git](https://git-scm.com/downloads).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+- Clone the repository:
+    ```bash
+    
+    git clone https://github.com/your-username/cinemille_FE.git
+    cd cinemille_FE
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Install npm dependencies:
 
-## Further help
+  ```bash
+    
+  npm install
+  npm install bootstrap
+  npm install primeng
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Running the Application
+
+**Start the Angular application**:
+
+    ```bash
+  ng serve
+
+The application should now be running on http://localhost:4200.
+
+## Contributing
+1. Fork the repository.
+2. Create a new branch **(git checkout -b feature-branch)**.
+3. Make your changes.
+4. Commit your changes **(git commit -m 'Add some feature')**.
+5. Push to the branch **(git push origin feature-branch)**.
+6. Create a new Pull Request.
+
